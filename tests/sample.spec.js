@@ -25,5 +25,5 @@ test('Tools qa', async ({ page }) => {
     await page.locator('id=age').fill('23')
     await page.locator('id=salary').fill('25000')
     await page.locator('id=department').fill('testing')
-    
+    await page.locator('//button[text()=Submit').click()
 })
